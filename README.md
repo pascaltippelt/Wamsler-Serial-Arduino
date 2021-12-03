@@ -19,3 +19,13 @@ pl -> power level
 sb -> state binary (on = true, off = false)
 s  -> state verbal
 
+Example for home-assistant:
+
+```
+sensor:
+  - platform: command_line
+    name: "stove current abmient temperature
+    command: "/usr/bin/curl [STOVE-IP]/get?ct"
+    unit_of_measurement: "°C"
+    scan_interval: 60
+```
