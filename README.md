@@ -8,16 +8,16 @@ Example:
 `/usr/bin/curl [STOVE-IP]/set?tt=22` will set the target temperature to 22°C.
 
 Possible to set:
-tt -> target temperature
-pl -> power level (0 = off)
-on / off
+- tt -> target temperature
+- pl -> power level (0 = off)
+- on / off
 
 Possible to get:
-tt -> target temperature
-ct -> current ambient temperature
-pl -> power level
-sb -> state binary (on = true, off = false)
-s  -> state verbal
+- tt -> target temperature
+- ct -> current ambient temperature
+- pl -> power level
+- sb -> state binary (on = true, off = false)
+- s  -> state verbal
 
 Example for home-assistant:
 
