@@ -21,6 +21,7 @@ s  -> state verbal
 
 Example for home-assistant:
 
+Get ambient temperature
 ```
 sensor:
   - platform: command_line
@@ -28,4 +29,10 @@ sensor:
     command: "/usr/bin/curl [STOVE-IP]/get?ct"
     unit_of_measurement: "°C"
     scan_interval: 60
+```
+set target temperature
+```
+rest_command:
+  set_t_temp:
+    url: "http://[STOVE-IP]/set?tt={{ states('input_number.slider_stove_target_temp') }}"
 ```
